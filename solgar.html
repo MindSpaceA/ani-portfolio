@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Solgar Wellness Store | Ani Navasardyan</title>
-
-    <meta name="description"
-          content="Solgar Wellness Store — a premium Shopify wellness eCommerce project by Ani Navasardyan.">
+    <title>Solgar Wellness Store | Project</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
 
@@ -30,13 +25,12 @@
         body {
             font-family: "Inter", sans-serif;
             background: #f7f7f2;
-            color: #20231d;
-            line-height: 1.6;
+            color: #25291f;
         }
 
         img,
         video {
-            max-width: 100%;
+            width: 100%;
             display: block;
         }
 
@@ -49,265 +43,184 @@
            NAVBAR
         ========================= */
 
-        .navbar {
-            width: 100%;
-            padding: 24px 6%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(247, 247, 242, 0.92);
-            backdrop-filter: blur(12px);
+        nav {
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(32, 35, 29, 0.08);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 22px 6%;
+
+            background: rgba(247, 247, 242, 0.88);
+            backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.07);
         }
 
         .logo {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 700;
-            letter-spacing: -0.5px;
         }
 
-        .back-link {
+        .back {
             font-size: 14px;
-            font-weight: 500;
-            opacity: 0.75;
-            transition: 0.3s ease;
+            color: #666b5d;
+            transition: 0.3s;
         }
 
-        .back-link:hover {
-            opacity: 1;
+        .back:hover {
+            color: #25291f;
         }
+
 
         /* =========================
            HERO
         ========================= */
 
         .hero {
-            min-height: 88vh;
-            padding: 100px 6% 80px;
+            min-height: 75vh;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             text-align: center;
+
+            padding: 100px 6%;
         }
 
         .hero-content {
-            width: 100%;
-            max-width: 1000px;
-            margin: auto;
+            max-width: 900px;
         }
 
-        .eyebrow {
-            font-size: 13px;
-            font-weight: 600;
+        .label {
+            font-size: 12px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #687052;
+
+            color: #747b66;
+
             margin-bottom: 22px;
         }
 
-        .hero h1 {
+        h1 {
             font-size: clamp(48px, 8vw, 100px);
             line-height: 0.95;
             letter-spacing: -5px;
+
             margin-bottom: 30px;
-            font-weight: 700;
         }
 
-        .hero p {
-            max-width: 680px;
-            margin: 0 auto 38px;
+        .hero-description {
+            max-width: 650px;
+            margin: auto;
+
             font-size: 18px;
-            color: #65685f;
+            line-height: 1.7;
+
+            color: #6b6f65;
         }
 
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 14px 24px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 600;
-            transition: 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .btn-primary {
-            background: #303a22;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary {
-            border: 1px solid rgba(32, 35, 29, 0.2);
-            background: white;
-        }
-
-        .btn-secondary:hover {
-            background: #eeeee7;
-        }
 
         /* =========================
-           GENERAL
+           PROJECT INFO
+        ========================= */
+
+        .info-section {
+            padding: 40px 6% 100px;
+        }
+
+        .info {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 20px;
+
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .info-card span {
+            display: block;
+
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+            color: #85897e;
+
+            margin-bottom: 8px;
+        }
+
+        .info-card strong {
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           PROJECT CONTENT
         ========================= */
 
         .section {
-            padding: 110px 6%;
+            padding: 100px 6%;
         }
 
-        .section-inner {
+        .container {
             max-width: 1200px;
             margin: auto;
         }
 
-        .section-header {
-            max-width: 700px;
-            margin-bottom: 55px;
+        .section-heading {
+            margin-bottom: 45px;
         }
 
-        .section-label {
+        .section-heading span {
             font-size: 12px;
-            text-transform: uppercase;
             letter-spacing: 2px;
-            color: #687052;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .section-title {
-            font-size: clamp(34px, 5vw, 58px);
-            line-height: 1;
-            letter-spacing: -2.5px;
-            margin-bottom: 20px;
-        }
-
-        .section-description {
-            font-size: 17px;
-            color: #686b63;
-            max-width: 650px;
-        }
-
-        /* =========================
-           MAIN PREVIEW
-        ========================= */
-
-        .preview-section {
-            padding-top: 30px;
-        }
-
-        .preview-box {
-            width: 100%;
-            border-radius: 28px;
-            overflow: hidden;
-            background: #e7e8df;
-            box-shadow: 0 25px 70px rgba(30, 35, 20, 0.12);
-        }
-
-        .preview-box img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* =========================
-           ABOUT
-        ========================= */
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 70px;
-            align-items: start;
-        }
-
-        .about-text h3 {
-            font-size: 28px;
-            margin-bottom: 18px;
-        }
-
-        .about-text p {
-            color: #666960;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .info-list {
-            display: grid;
-            gap: 18px;
-        }
-
-        .info-item {
-            padding: 20px;
-            background: white;
-            border-radius: 16px;
-            border: 1px solid rgba(32, 35, 29, 0.07);
-        }
-
-        .info-item span {
-            display: block;
-            font-size: 12px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #7a7d72;
-            margin-bottom: 5px;
+
+            color: #747b66;
         }
 
-        .info-item strong {
-            font-size: 15px;
+        .section-heading h2 {
+            font-size: clamp(36px, 5vw, 60px);
+            letter-spacing: -3px;
+
+            margin-top: 12px;
         }
+
 
         /* =========================
            VIDEO
         ========================= */
 
-        .video-section {
-            background: #e9e9e1;
-        }
-
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 28px;
-        }
-
-        .video-card {
-            background: #fff;
-            padding: 10px;
-            border-radius: 24px;
+        .video-wrapper {
+            border-radius: 26px;
             overflow: hidden;
-            box-shadow: 0 15px 45px rgba(30, 35, 20, 0.08);
+
+            background: #deded5;
+
+            box-shadow: 0 25px 70px rgba(0,0,0,0.10);
         }
 
-        .video-card video {
+        .video-wrapper video {
             width: 100%;
-            border-radius: 18px;
-            background: #ddd;
+            height: auto;
         }
 
-        .video-info {
-            padding: 20px 14px 14px;
-        }
-
-        .video-info h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .video-info p {
-            font-size: 14px;
-            color: #777a72;
-        }
 
         /* =========================
            GALLERY
@@ -315,247 +228,217 @@
 
         .gallery {
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
+
+            gap: 25px;
         }
 
         .gallery-item {
-            border-radius: 22px;
             overflow: hidden;
-            background: #e7e7df;
-            cursor: pointer;
-            transition: 0.35s ease;
-        }
 
-        .gallery-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 45px rgba(30, 35, 20, 0.12);
+            border-radius: 22px;
+
+            background: #e5e5dc;
         }
 
         .gallery-item img {
-            width: 100%;
-            height: auto;
+            transition: transform 0.5s ease;
         }
 
-        .gallery-item.large {
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .gallery-item.full {
             grid-column: span 2;
         }
 
-        /* =========================
-           MOBILE GALLERY
-        ========================= */
-
-        .mobile-gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .mobile-gallery .gallery-item {
-            background: #e7e7df;
-        }
 
         /* =========================
-           FEATURES
+           MULTIPLE VIDEOS
         ========================= */
 
-        .features {
+        .video-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
         }
 
-        .feature {
+        .video-card {
             background: white;
-            padding: 30px;
-            border-radius: 22px;
-            border: 1px solid rgba(32, 35, 29, 0.07);
+
+            padding: 10px;
+
+            border-radius: 24px;
+
+            box-shadow: 0 15px 40px rgba(0,0,0,0.07);
         }
 
-        .feature-number {
-            font-size: 12px;
-            color: #687052;
-            font-weight: 700;
-            margin-bottom: 35px;
+        .video-card video {
+            border-radius: 18px;
         }
 
-        .feature h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+        .video-title {
+            padding: 18px 10px 10px;
+
+            font-size: 16px;
+            font-weight: 600;
         }
 
-        .feature p {
-            font-size: 14px;
-            color: #71746c;
-        }
 
         /* =========================
            TECHNOLOGIES
         ========================= */
 
-        .tech-list {
+        .technologies {
             display: flex;
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
-        .tech {
+        .technology {
             padding: 12px 18px;
+
             background: white;
+
             border-radius: 50px;
+
             font-size: 14px;
-            border: 1px solid rgba(32, 35, 29, 0.08);
+
+            border: 1px solid rgba(0,0,0,0.06);
         }
 
+
         /* =========================
-           CTA
+           LIVE PROJECT
         ========================= */
 
         .cta {
-            padding: 130px 6%;
+            padding: 120px 6%;
+
             background: #303a22;
+
             color: white;
+
             text-align: center;
         }
 
-        .cta-inner {
-            max-width: 800px;
-            margin: auto;
-        }
-
         .cta h2 {
-            font-size: clamp(40px, 6vw, 70px);
-            line-height: 1;
-            letter-spacing: -3px;
+            font-size: clamp(40px, 6vw, 72px);
+
+            letter-spacing: -4px;
+
             margin-bottom: 25px;
         }
 
         .cta p {
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255,255,255,0.7);
+
             margin-bottom: 35px;
         }
 
-        .cta .btn {
+        .live-button {
+            display: inline-flex;
+
+            padding: 15px 25px;
+
             background: white;
             color: #303a22;
+
+            border-radius: 50px;
+
+            font-size: 14px;
+            font-weight: 600;
+
+            transition: 0.3s;
         }
+
+        .live-button:hover {
+            transform: translateY(-3px);
+        }
+
 
         /* =========================
            FOOTER
         ========================= */
 
         footer {
-            padding: 35px 6%;
             background: #303a22;
+
             color: rgba(255,255,255,0.6);
-            border-top: 1px solid rgba(255,255,255,0.1);
+
             text-align: center;
+
+            padding: 30px 6%;
+
             font-size: 13px;
         }
 
+
         /* =========================
-           RESPONSIVE
+           MOBILE
         ========================= */
 
-        @media (max-width: 900px) {
+        @media (max-width: 700px) {
 
-            .hero {
-                min-height: 75vh;
-                padding-top: 80px;
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .mobile-gallery {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-        }
-
-        @media (max-width: 650px) {
-
-            .navbar {
+            nav {
                 padding: 18px 5%;
             }
 
             .logo {
-                font-size: 17px;
+                font-size: 16px;
             }
 
-            .back-link {
+            .back {
                 font-size: 12px;
             }
 
             .hero {
-                min-height: auto;
-                padding: 90px 5% 80px;
-            }
+                min-height: 65vh;
 
-            .hero h1 {
-                font-size: clamp(48px, 15vw, 75px);
-                letter-spacing: -3px;
-            }
-
-            .hero p {
-                font-size: 15px;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-            }
-
-            .section {
                 padding: 80px 5%;
             }
 
-            .section-title {
-                letter-spacing: -1.5px;
+            h1 {
+                font-size: clamp(48px, 15vw, 70px);
+
+                letter-spacing: -3px;
             }
 
-            .section-description {
+            .hero-description {
                 font-size: 15px;
             }
 
-            .preview-box {
-                border-radius: 18px;
+            .info-section {
+                padding: 20px 5% 70px;
             }
 
-            .video-grid {
+            .info {
                 grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 75px 5%;
+            }
+
+            .section-heading h2 {
+                letter-spacing: -2px;
             }
 
             .gallery {
                 grid-template-columns: 1fr;
-                gap: 16px;
             }
 
-            .gallery-item.large {
+            .gallery-item.full {
                 grid-column: span 1;
             }
 
-            .mobile-gallery {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-
-            .features {
+            .video-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .feature {
-                padding: 25px;
             }
 
             .cta {
@@ -571,34 +454,37 @@
     </style>
 </head>
 
+
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
 
-    <nav class="navbar">
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
 
         <a href="index.html" class="logo">
             Ani Navasardyan
         </a>
 
-        <a href="index.html#projects" class="back-link">
+        <a href="index.html#projects" class="back">
             ← Back to Portfolio
         </a>
 
     </nav>
 
 
+
     <!-- =========================
          HERO
-    ========================== -->
+    ========================= -->
 
-    <header class="hero">
+    <section class="hero">
 
         <div class="hero-content">
 
-            <div class="eyebrow">
+            <div class="label">
                 Shopify Project
             </div>
 
@@ -607,55 +493,61 @@
                 Wellness Store
             </h1>
 
-            <p>
-                A premium Shopify wellness eCommerce experience
-                designed with custom sections, product layouts,
-                collections and responsive interfaces.
+            <p class="hero-description">
+                A premium Shopify wellness store designed with
+                custom sections, product layouts, collections
+                and a responsive eCommerce experience.
             </p>
-
-            <div class="hero-buttons">
-
-                <a
-                    href="YOUR-LIVE-SOLGAR-LINK"
-                    target="_blank"
-                    class="btn btn-primary"
-                >
-                    View Live Project →
-                </a>
-
-                <a
-                    href="#gallery"
-                    class="btn btn-secondary"
-                >
-                    Explore Project
-                </a>
-
-            </div>
 
         </div>
 
-    </header>
+    </section>
+
 
 
     <!-- =========================
-         MAIN PREVIEW
-    ========================== -->
+         PROJECT INFO
+    ========================= -->
 
-    <section class="section preview-section">
+    <section class="info-section">
 
-        <div class="section-inner">
+        <div class="info">
 
-            <div class="preview-box">
+            <div class="info-card">
 
-                <!--
-                    Փոխիր սա քո main screenshot-ի անունով
-                    օրինակ՝ images/solgar-home.jpg
-                -->
+                <span>
+                    Platform
+                </span>
 
-                <img
-                    src="images/solgar-home.jpg"
-                    alt="Solgar Wellness Store homepage"
-                >
+                <strong>
+                    Shopify
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    Role
+                </span>
+
+                <strong>
+                    Shopify Developer
+                </strong>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    Technologies
+                </span>
+
+                <strong>
+                    Liquid · HTML · CSS · JavaScript
+                </strong>
 
             </div>
 
@@ -664,99 +556,145 @@
     </section>
 
 
+
     <!-- =========================
-         ABOUT PROJECT
-    ========================== -->
+         MAIN PROJECT VIDEO
+    ========================= -->
 
     <section class="section">
 
-        <div class="section-inner">
+        <div class="container">
 
-            <div class="section-header">
+            <div class="section-heading">
 
-                <div class="section-label">
-                    About the project
-                </div>
+                <span>
+                    Project Preview
+                </span>
 
-                <h2 class="section-title">
-                    A modern wellness
-                    eCommerce experience.
+                <h2>
+                    See the store in action.
                 </h2>
-
-                <p class="section-description">
-                    The goal was to create a premium and trustworthy
-                    wellness store experience for Solgar products,
-                    combining clean editorial design with practical
-                    eCommerce functionality.
-                </p>
 
             </div>
 
 
-            <div class="about-grid">
+            <div class="video-wrapper">
 
-                <div class="about-text">
+                <!--
+                    HERE PUT YOUR MAIN VIDEO
 
-                    <h3>
-                        What I worked on
-                    </h3>
+                    Example:
+                    videos/solgar-main.mp4
+                -->
 
-                    <p>
-                        I customized the Shopify storefront and created
-                        custom sections and layouts to present wellness
-                        products in a clear and premium way.
-                    </p>
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
 
-                    <p>
-                        The interface was designed to feel clean,
-                        modern and responsive across desktop,
-                        tablet and mobile devices.
-                    </p>
+                    <source
+                        src="videos/solgar-main.mp4"
+                        type="video/mp4"
+                    >
+
+                    Your browser does not support video.
+
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         SCREENSHOTS
+    ========================= -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>
+                    Screenshots
+                </span>
+
+                <h2>
+                    Inside the project.
+                </h2>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <!-- Screenshot 1 -->
+
+                <div class="gallery-item full">
+
+                    <img
+                        src="images/solgar-1.jpg"
+                        alt="Solgar homepage"
+                        loading="lazy"
+                    >
 
                 </div>
 
 
-                <div class="info-list">
+                <!-- Screenshot 2 -->
 
-                    <div class="info-item">
+                <div class="gallery-item">
 
-                        <span>Platform</span>
+                    <img
+                        src="images/solgar-2.jpg"
+                        alt="Solgar section"
+                        loading="lazy"
+                    >
 
-                        <strong>
-                            Shopify
-                        </strong>
+                </div>
 
-                    </div>
 
-                    <div class="info-item">
+                <!-- Screenshot 3 -->
 
-                        <span>Role</span>
+                <div class="gallery-item">
 
-                        <strong>
-                            Shopify Developer
-                        </strong>
+                    <img
+                        src="images/solgar-3.jpg"
+                        alt="Solgar collection"
+                        loading="lazy"
+                    >
 
-                    </div>
+                </div>
 
-                    <div class="info-item">
 
-                        <span>Focus</span>
+                <!-- Screenshot 4 -->
 
-                        <strong>
-                            eCommerce & UI
-                        </strong>
+                <div class="gallery-item">
 
-                    </div>
+                    <img
+                        src="images/solgar-4.jpg"
+                        alt="Solgar products"
+                        loading="lazy"
+                    >
 
-                    <div class="info-item">
+                </div>
 
-                        <span>Responsive</span>
 
-                        <strong>
-                            Desktop / Tablet / Mobile
-                        </strong>
+                <!-- Screenshot 5 -->
 
-                    </div>
+                <div class="gallery-item">
+
+                    <img
+                        src="images/solgar-5.jpg"
+                        alt="Solgar product page"
+                        loading="lazy"
+                    >
 
                 </div>
 
@@ -767,28 +705,24 @@
     </section>
 
 
+
     <!-- =========================
-         VIDEO SHOWCASE
-    ========================== -->
+         ADDITIONAL VIDEOS
+    ========================= -->
 
-    <section class="section video-section">
+    <section class="section">
 
-        <div class="section-inner">
+        <div class="container">
 
-            <div class="section-header">
+            <div class="section-heading">
 
-                <div class="section-label">
-                    Video showcase
-                </div>
+                <span>
+                    More
+                </span>
 
-                <h2 class="section-title">
-                    See the store in action.
+                <h2>
+                    Project walkthroughs.
                 </h2>
-
-                <p class="section-description">
-                    Add screen recordings of the website,
-                    animations, interactions or mobile experience.
-                </p>
 
             </div>
 
@@ -796,14 +730,9 @@
             <div class="video-grid">
 
 
-                <!-- VIDEO 1 -->
+                <!-- Video 1 -->
 
                 <div class="video-card">
-
-                    <!--
-                        Փոխիր video-ի անունը
-                        օրինակ՝ videos/solgar-desktop.mp4
-                    -->
 
                     <video
                         controls
@@ -816,26 +745,16 @@
                             type="video/mp4"
                         >
 
-                        Your browser does not support video.
-
                     </video>
 
-                    <div class="video-info">
-
-                        <h3>
-                            Desktop Experience
-                        </h3>
-
-                        <p>
-                            Full desktop walkthrough of the store.
-                        </p>
-
+                    <div class="video-title">
+                        Desktop Experience
                     </div>
 
                 </div>
 
 
-                <!-- VIDEO 2 -->
+                <!-- Video 2 -->
 
                 <div class="video-card">
 
@@ -850,20 +769,10 @@
                             type="video/mp4"
                         >
 
-                        Your browser does not support video.
-
                     </video>
 
-                    <div class="video-info">
-
-                        <h3>
-                            Mobile Experience
-                        </h3>
-
-                        <p>
-                            Responsive mobile experience and navigation.
-                        </p>
-
+                    <div class="video-title">
+                        Mobile Experience
                     </div>
 
                 </div>
@@ -875,393 +784,52 @@
 
     </section>
 
-
-    <!-- =========================
-         DESKTOP GALLERY
-    ========================== -->
-
-    <section class="section" id="gallery">
-
-        <div class="section-inner">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Project gallery
-                </div>
-
-                <h2 class="section-title">
-                    Desktop interface.
-                </h2>
-
-                <p class="section-description">
-                    Screenshots showcasing the main sections
-                    and pages of the Solgar Shopify store.
-                </p>
-
-            </div>
-
-
-            <div class="gallery">
-
-
-                <!-- IMAGE 1 -->
-
-                <div class="gallery-item large">
-
-                    <img
-                        src="images/solgar-home.jpg"
-                        alt="Solgar homepage"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <!-- IMAGE 2 -->
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/solgar-collection.jpg"
-                        alt="Solgar collection page"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <!-- IMAGE 3 -->
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/solgar-product.jpg"
-                        alt="Solgar product page"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <!-- IMAGE 4 -->
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/solgar-wellness.jpg"
-                        alt="Solgar wellness section"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <!-- IMAGE 5 -->
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/solgar-footer.jpg"
-                        alt="Solgar footer"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         MOBILE GALLERY
-    ========================== -->
-
-    <section class="section">
-
-        <div class="section-inner">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Responsive design
-                </div>
-
-                <h2 class="section-title">
-                    Built for mobile.
-                </h2>
-
-                <p class="section-description">
-                    Mobile screenshots showing how the Shopify
-                    experience adapts to smaller screens.
-                </p>
-
-            </div>
-
-
-            <div class="mobile-gallery">
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-1.jpg"
-                        alt="Solgar mobile homepage"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-2.jpg"
-                        alt="Solgar mobile collection"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-3.jpg"
-                        alt="Solgar mobile product"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-4.jpg"
-                        alt="Solgar mobile navigation"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-5.jpg"
-                        alt="Solgar mobile section"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-                <div class="gallery-item">
-
-                    <img
-                        src="images/mobile-6.jpg"
-                        alt="Solgar mobile footer"
-                        loading="lazy"
-                    >
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         FEATURES
-    ========================== -->
-
-    <section class="section">
-
-        <div class="section-inner">
-
-            <div class="section-header">
-
-                <div class="section-label">
-                    Key features
-                </div>
-
-                <h2 class="section-title">
-                    What makes the project custom.
-                </h2>
-
-            </div>
-
-
-            <div class="features">
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Custom Shopify Sections
-                    </h3>
-
-                    <p>
-                        Custom sections and layouts created
-                        specifically for the store.
-                    </p>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        02
-                    </div>
-
-                    <h3>
-                        Product Experience
-                    </h3>
-
-                    <p>
-                        Clean product presentation and
-                        organized wellness collections.
-                    </p>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        03
-                    </div>
-
-                    <h3>
-                        Responsive Design
-                    </h3>
-
-                    <p>
-                        Optimized layouts for desktop,
-                        tablet and mobile.
-                    </p>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        04
-                    </div>
-
-                    <h3>
-                        Premium UI
-                    </h3>
-
-                    <p>
-                        Minimal editorial design with a
-                        premium wellness aesthetic.
-                    </p>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        05
-                    </div>
-
-                    <h3>
-                        Collection Structure
-                    </h3>
-
-                    <p>
-                        Wellness categories organized for
-                        simple product discovery.
-                    </p>
-
-                </div>
-
-
-                <div class="feature">
-
-                    <div class="feature-number">
-                        06
-                    </div>
-
-                    <h3>
-                        Custom Styling
-                    </h3>
-
-                    <p>
-                        Custom HTML, CSS and Liquid styling
-                        throughout the storefront.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- =========================
          TECHNOLOGIES
-    ========================== -->
+    ========================= -->
 
     <section class="section">
 
-        <div class="section-inner">
+        <div class="container">
 
-            <div class="section-header">
+            <div class="section-heading">
 
-                <div class="section-label">
-                    Technologies
-                </div>
+                <span>
+                    Built With
+                </span>
 
-                <h2 class="section-title">
-                    Built with.
+                <h2>
+                    Technologies.
                 </h2>
 
             </div>
 
 
-            <div class="tech-list">
+            <div class="technologies">
 
-                <div class="tech">
+                <div class="technology">
                     Shopify
                 </div>
 
-                <div class="tech">
+                <div class="technology">
                     Liquid
                 </div>
 
-                <div class="tech">
+                <div class="technology">
                     HTML5
                 </div>
 
-                <div class="tech">
+                <div class="technology">
                     CSS3
                 </div>
 
-                <div class="tech">
+                <div class="technology">
                     JavaScript
                 </div>
 
-                <div class="tech">
+                <div class="technology">
                     Responsive Design
                 </div>
 
@@ -1272,39 +840,36 @@
     </section>
 
 
+
     <!-- =========================
-         CTA
-    ========================== -->
+         LIVE PROJECT
+    ========================= -->
 
     <section class="cta">
 
-        <div class="cta-inner">
+        <h2>
+            Explore the live store.
+        </h2>
 
-            <h2>
-                Explore the live store.
-            </h2>
+        <p>
+            View the complete Solgar Wellness Store.
+        </p>
 
-            <p>
-                Take a closer look at the complete
-                Solgar Wellness Store experience.
-            </p>
-
-            <a
-                href="YOUR-LIVE-SOLGAR-LINK"
-                target="_blank"
-                class="btn"
-            >
-                View Live Project →
-            </a>
-
-        </div>
+        <a
+            href="YOUR-SOLGAR-LINK"
+            target="_blank"
+            class="live-button"
+        >
+            View Live Project →
+        </a>
 
     </section>
 
 
+
     <!-- =========================
          FOOTER
-    ========================== -->
+    ========================= -->
 
     <footer>
 
