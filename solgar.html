@@ -21,22 +21,26 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
             font-family: "Inter", sans-serif;
-            background: #f7f7f2;
-            color: #25291f;
+            background: #eef5ff;
+            color: #102a43;
             line-height: 1.6;
         }
+
 
         img,
         video {
             display: block;
             width: 100%;
         }
+
 
         a {
             text-decoration: none;
@@ -55,25 +59,34 @@
 
             padding: 24px 6%;
 
-            border-bottom: 1px solid rgba(0,0,0,0.07);
+            border-bottom: 1px solid rgba(30, 90, 160, 0.12);
 
-            background: #f7f7f2;
+            background: rgba(238, 245, 255, 0.92);
+
+            position: relative;
+            z-index: 10;
         }
+
 
         .logo {
             font-size: 18px;
             font-weight: 700;
+            color: #123b63;
+
+            letter-spacing: -0.3px;
         }
+
 
         .back {
             font-size: 14px;
-            color: #6b6f65;
+            color: #58708a;
 
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
 
+
         .back:hover {
-            color: #25291f;
+            color: #1769aa;
         }
 
 
@@ -85,12 +98,21 @@
             text-align: center;
 
             padding: 110px 6% 90px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 20%,
+                    rgba(92, 160, 220, 0.20),
+                    transparent 45%
+                );
         }
+
 
         .header-content {
             max-width: 800px;
             margin: auto;
         }
+
 
         .header h1 {
             font-size: clamp(45px, 7vw, 85px);
@@ -100,14 +122,17 @@
             letter-spacing: -4px;
 
             margin-bottom: 25px;
+
+            color: #0d3557;
         }
+
 
         .header p {
             max-width: 650px;
 
             margin: auto;
 
-            color: #6b6f65;
+            color: #58708a;
 
             font-size: 17px;
         }
@@ -130,9 +155,11 @@
             margin-top: 80px;
         }
 
+
         .section-title {
             margin-bottom: 30px;
         }
+
 
         .section-title span {
             display: block;
@@ -143,15 +170,20 @@
 
             letter-spacing: 2px;
 
-            color: #747b66;
+            color: #3978b8;
 
             margin-bottom: 8px;
+
+            font-weight: 600;
         }
+
 
         .section-title h2 {
             font-size: 34px;
 
             letter-spacing: -1.5px;
+
+            color: #123b63;
         }
 
 
@@ -167,19 +199,38 @@
             gap: 25px;
         }
 
+
         .video {
             overflow: hidden;
 
             border-radius: 20px;
 
-            background: #e3e3da;
+            background: #dbeafe;
 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+            border: 1px solid rgba(59, 130, 246, 0.15);
+
+            box-shadow:
+                0 15px 40px rgba(30, 80, 140, 0.10);
+
+            transition:
+                transform 0.35s ease,
+                box-shadow 0.35s ease;
         }
+
+
+        .video:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 20px 50px rgba(30, 80, 140, 0.15);
+        }
+
 
         .video video {
             width: 100%;
             height: auto;
+
+            background: #dbeafe;
         }
 
 
@@ -195,24 +246,34 @@
             gap: 25px;
         }
 
+
         .image {
             overflow: hidden;
 
             border-radius: 20px;
 
-            background: #e3e3da;
+            background: #dbeafe;
+
+            border: 1px solid rgba(59, 130, 246, 0.12);
+
+            box-shadow:
+                0 12px 35px rgba(30, 80, 140, 0.07);
         }
+
 
         .image.full {
             grid-column: span 2;
         }
 
+
         .image img {
             width: 100%;
             height: auto;
 
-            transition: transform 0.4s ease;
+            transition:
+                transform 0.4s ease;
         }
+
 
         .image:hover img {
             transform: scale(1.02);
@@ -231,18 +292,35 @@
             gap: 12px;
         }
 
+
         .technology {
             padding: 12px 20px;
 
-            background: white;
+            background: #ffffff;
 
-            border: 1px solid rgba(0,0,0,0.07);
+            border: 1px solid rgba(59, 130, 246, 0.15);
 
             border-radius: 50px;
 
             font-size: 14px;
 
             font-weight: 500;
+
+            color: #1d5f9e;
+
+            box-shadow:
+                0 5px 18px rgba(30, 80, 140, 0.05);
+
+            transition:
+                background 0.3s ease,
+                transform 0.3s ease;
+        }
+
+
+        .technology:hover {
+            background: #e4f0ff;
+
+            transform: translateY(-2px);
         }
 
 
@@ -259,9 +337,11 @@
 
             font-size: 13px;
 
-            color: #777b70;
+            color: #66809a;
 
-            border-top: 1px solid rgba(0,0,0,0.07);
+            border-top: 1px solid rgba(30, 90, 160, 0.12);
+
+            background: rgba(255, 255, 255, 0.35);
         }
 
 
@@ -275,17 +355,21 @@
                 padding: 18px 5%;
             }
 
+
             .logo {
                 font-size: 16px;
             }
+
 
             .back {
                 font-size: 12px;
             }
 
+
             .header {
                 padding: 80px 5% 65px;
             }
+
 
             .header h1 {
                 font-size: clamp(45px, 14vw, 65px);
@@ -293,21 +377,26 @@
                 letter-spacing: -3px;
             }
 
+
             .header p {
                 font-size: 15px;
             }
+
 
             .content {
                 padding: 0 5% 70px;
             }
 
+
             .section {
                 margin-top: 60px;
             }
 
+
             .section-title h2 {
                 font-size: 28px;
             }
+
 
             .videos {
                 grid-template-columns: 1fr;
@@ -315,19 +404,34 @@
                 gap: 18px;
             }
 
+
             .images {
                 grid-template-columns: 1fr;
 
                 gap: 18px;
             }
 
+
             .image.full {
                 grid-column: span 1;
             }
 
+
             .video,
             .image {
                 border-radius: 16px;
+            }
+
+
+            .technologies {
+                gap: 9px;
+            }
+
+
+            .technology {
+                padding: 10px 16px;
+
+                font-size: 13px;
             }
 
         }
@@ -350,6 +454,7 @@
             Ani Navasardyan
         </a>
 
+
         <a href="index.html#projects" class="back">
             ← Back to Portfolio
         </a>
@@ -370,6 +475,7 @@
                 Solgar Wellness Store
             </h1>
 
+
             <p>
                 Premium Shopify wellness store with custom
                 sections, collections and product layouts.
@@ -385,111 +491,149 @@
 
 
         <!-- =========================
-     VIDEOS
-========================= -->
+             VIDEOS
+        ========================= -->
 
-<section class="section">
+        <section class="section">
 
-    <div class="section-title">
+            <div class="section-title">
 
-        <span>
-            Project
-        </span>
+                <span>
+                    Project
+                </span>
 
-        <h2>
-            Videos
-        </h2>
+                <h2>
+                    Videos
+                </h2>
 
-    </div>
-
-    <div class="videos">
-
-        <!-- VIDEO 1 -->
-        <div class="video">
-            <video
-                controls
-                playsinline
-                preload="metadata"
-            >
-                <source
-                    src="https://cdn.shopify.com/videos/c/o/v/33c0e5e38c6e4ab3810be5c3db906001.mov"
-                    type="video/quicktime"
-                >
-                Your browser does not support video.
-            </video>
-        </div>
+            </div>
 
 
-        <!-- VIDEO 2 -->
-        <div class="video">
-            <video
-                controls
-                playsinline
-                preload="metadata"
-            >
-                <source
-                    src="https://cdn.shopify.com/videos/c/o/v/54c10c02271d48d6a325d6122cc116c2.mov"
-                    type="video/quicktime"
-                >
-                Your browser does not support video.
-            </video>
-        </div>
+            <div class="videos">
 
 
-        <!-- VIDEO 3 -->
-        <div class="video">
-            <video
-                controls
-                playsinline
-                preload="metadata"
-            >
-                <source
-                    src="https://cdn.shopify.com/videos/c/o/v/ce4475a5ee634ff394da5f11cf3b28f1.mov"
-                    type="video/quicktime"
-                >
-                Your browser does not support video.
-            </video>
-        </div>
+                <!-- VIDEO 1 -->
+
+                <div class="video">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+
+                        <source
+                            src="videos/solgar-video-1.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video.
+
+                    </video>
+
+                </div>
 
 
-        <!-- VIDEO 4 -->
-        <div class="video">
-            <video
-                controls
-                playsinline
-                preload="metadata"
-            >
-                <source
-                    src="https://cdn.shopify.com/videos/c/o/v/68d31fa1835c4ab09b50b6043df6df09.mov"
-                    type="video/quicktime"
-                >
-                Your browser does not support video.
-            </video>
-        </div>
+
+                <!-- VIDEO 2 -->
+
+                <div class="video">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+
+                        <source
+                            src="videos/solgar-video-2.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video.
+
+                    </video>
+
+                </div>
 
 
-        <!-- VIDEO 5 -->
-        <div class="video">
-            <video
-                controls
-                playsinline
-                preload="metadata"
-            >
-                <source
-                    src="https://cdn.shopify.com/videos/c/o/v/49c806468df245a1bffe5ebb04260add.mov"
-                    type="video/quicktime"
-                >
-                Your browser does not support video.
-            </video>
-        </div>
 
-    </div>
+                <!-- VIDEO 3 -->
 
-</section>
-        
+                <div class="video">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+
+                        <source
+                            src="videos/solgar-video-3.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video.
+
+                    </video>
+
+                </div>
+
+
+
+                <!-- VIDEO 4 -->
+
+                <div class="video">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+
+                        <source
+                            src="videos/solgar-video-4.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video.
+
+                    </video>
+
+                </div>
+
+
+
+                <!-- VIDEO 5 -->
+
+                <div class="video">
+
+                    <video
+                        controls
+                        playsinline
+                        preload="metadata"
+                    >
+
+                        <source
+                            src="videos/solgar-video-5.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support video.
+
+                    </video>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
 
         <!-- =========================
-             IMAGES
+             SCREENSHOTS
         ========================= -->
 
         <section class="section">
@@ -523,6 +667,7 @@
                 </div>
 
 
+
                 <!-- IMAGE 2 -->
 
                 <div class="image">
@@ -534,6 +679,7 @@
                     >
 
                 </div>
+
 
 
                 <!-- IMAGE 3 -->
@@ -549,6 +695,7 @@
                 </div>
 
 
+
                 <!-- IMAGE 4 -->
 
                 <div class="image">
@@ -560,6 +707,7 @@
                     >
 
                 </div>
+
 
 
                 <!-- IMAGE 5 -->
@@ -602,25 +750,31 @@
 
             <div class="technologies">
 
+
                 <div class="technology">
                     Shopify
                 </div>
+
 
                 <div class="technology">
                     Liquid
                 </div>
 
+
                 <div class="technology">
                     HTML5
                 </div>
+
 
                 <div class="technology">
                     CSS3
                 </div>
 
+
                 <div class="technology">
                     JavaScript
                 </div>
+
 
             </div>
 
